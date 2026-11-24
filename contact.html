@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f4f0;
+    color: #171717;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.container {
+    max-width: 1250px;
+    margin: auto;
+    padding: 40px 6%;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav a {
+    margin-left: 25px;
+    font-size: 13px;
+    color: #666;
+}
+
+/* HERO */
+
+.hero {
+    padding: 100px 0 80px;
+}
+
+.hero-label {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 8vw, 100px);
+    line-height: 0.95;
+    letter-spacing: -5px;
+    font-weight: 500;
+}
+
+.hero h1 span {
+    color: #888;
+}
+
+.hero-description {
+    max-width: 450px;
+    margin-top: 30px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* SECTION */
+
+.section {
+    margin-bottom: 100px;
+    scroll-margin-top: 30px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.section-heading h2 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.section-heading span {
+    font-size: 12px;
+    color: #777;
+}
+
+/* CARD GRID */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.card {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background: #e4e2dc;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.card:hover .card-image img {
+    transform: scale(1.04);
+}
+
+.card-number {
+    font-size: 11px;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.card-description {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.7;
+}
+
+.card-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 12px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 3px;
+}
+
+
+/* POSTER GRID */
+.poster-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+/* POSTER IMAGE 3:4 */
+.poster-card img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: contain;
+    display: block;
+    background: #e4e2dc;
+    margin-bottom: 15px;
+}
+
+/* POSTER TEXT */
+.poster-card h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.poster-card p {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.7;
+}
+
+.poster-card span {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 12px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 3px;
+}
+
+/* HOVER */
+.poster-card {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.poster-card:hover {
+    transform: translateY(-6px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .poster-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .poster-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* TEXT SHOWCASE */
+
+.text-grid .card-image {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e9e7e1;
+}
+
+/* Khusus kolom Banner */
+#websites .card-image {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+#websites .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.text-symbol {
+    font-size: 70px;
+    font-weight: 300;
+    color: #555;
+}
+
+/* FOOTER */
+
+.footer {
+    border-top: 1px solid #ccc;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #777;
+}
+
+.footer a {
+    color: #171717;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 25px 5%;
+    }
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .section {
+        margin-bottom: 70px;
+    }
+
+    .nav a {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .nav a {
+        font-size: 11px;
+    }
+
+    .section-heading h2 {
+        font-size: 23px;
+    }
+}
+</style>
+  <title>VerPage</title>
+
+  <!-- slider stylesheet -->
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              VerPage
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html"> Portfolio </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Showcase</a>
+                </li>
+              </ul>
+              <div class="user_option">
+                <a href="">
+                  <img src="images/user.png" alt="">
+                </a>
+                <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- contact section -->
+
+  
+<main id="showcase">
+
+    <!-- 01. CERTIFICATES -->
+    <section class="section" id="certificates">
+
+        <div class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo">
+            PERSONAL ARCHIVE
+        </div>
+
+        <nav class="nav">
+            <div class="logo">
+            VERMILION
+        </div>
+        </nav>
+
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-label">
+            A COLLECTION OF MY WORLD
+        </div>
+
+        <h1>
+            Personal<br>
+            <span>Showcase.</span>
+        </h1>
+
+        <p class="hero-description">
+            a small space that holds my work, stories, inspiration, and the things that shape the way I see the world
+        </p>
+
+    </section>
+    <section class="section" id="certificates">
+
+        <div class="section-heading">
+            <div>
+                <h2>Certificates</h2>
+                <p>Dokumentasi perjalanan belajar dan pencapaian.</p>
+            </div>
+            <span>Learning & Achievement</span>
+        </div>
+
+        <div class="grid">
+
+            <a href="images/sertiffe.png" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/sertiffe.png" alt="Certificate 02">
+                </div>
+                <div class="card-number">01 / 03</div>
+                <h3 class="card-title">Frontend Developer Certificate</h3>
+                <p class="card-description">BOOTCAMP 2024 by UDEMY.</p>
+                <span class="card-link">View Certificate ↗</span>
+            </a>
+
+            <a href="images/sertifca.png" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/sertifca.png" alt="Certificate 02">
+                </div>
+                <div class="card-number">02 / 03</div>
+                <h3 class="card-title">Computer Architecture Certificate</h3>
+                <p class="card-description">BOOTCAMP 2025 by SAYLOR UNIVERSITY.</p>
+                <span class="card-link">View Certificate ↗</span>
+            </a>
+
+            <a href="images/sertifcc.png" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/sertifcc.png" alt="Certificate 02">
+                </div>
+                <div class="card-number">03 / 03</div>
+                <h3 class="card-title">Content Creator Certificate</h3>
+                <p class="card-description">INTERNSHIP 2025 by EUDEKA.</p>
+                <span class="card-link">View Certificate ↗</span>
+            </a>
+
+        </div>
+    </section>
+            <!-- 02. POSTER PROJECTS -->
+    
+    <!-- POSTER PROJECTS -->
+    <section class="section" id="posters">
+
+        <div class="section-heading">
+            <div>
+                <h2>Poster Projects</h2>
+                <p>Eksplorasi visual melalui komposisi dan tipografi.</p>
+            </div>
+            <span>Visual Experiments</span>
+        </div>
+
+        <div class="poster-grid">
+
+            <a href="images/GFX SR (RHCP).png" class="poster-card" target="_blank">
+                <img src="images/GFX SR (RHCP).png" alt="Poster 01">
+
+                <h3>Poster Project 01</h3>
+                <p>Eksperimen visual dengan pendekatan kreatif.</p>
+                <span>View Project ↗</span>
+            </a>
+
+            <a href="images/magazine3.png" class="poster-card" target="_blank">
+                <img src="images/magazine3.png" alt="Poster 02">
+
+                <h3>Poster Project 02</h3>
+                <p>Perpaduan tipografi dan visual yang menarik.</p>
+                <span>View Project ↗</span>
+            </a>
+
+            <a href="images/TakinaChisato.png" class="poster-card" target="_blank">
+                <img src="images/TakinaChisato.png" alt="Poster 03">
+
+                <h3>Poster Project 03</h3>
+                <p>Karya poster dengan karakter visual minimalis.</p>
+                <span>View Project ↗</span>
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 03. WEBSITES -->
+    <section class="section" id="websites">
+
+        <div class="section-heading">
+            <div>
+                <h2>BANNER</h2>
+                <p>Banner untuk Malam Puncak Karang Taruna</p>
+            </div>
+            <span>Visual Experiences</span>
+        </div>
+
+        <div class="grid">
+
+            <a href="images/Merah Ilustrasi Pekan Budaya Banner_20240829_212535_0000.png" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/Merah Ilustrasi Pekan Budaya Banner_20240829_212535_0000.png" alt="Website Project 01">
+                </div>
+                <div class="card-number">01 / 03</div>
+                <h3 class="card-title">MAHRITAS 2024</h3>
+                <p class="card-description">Malam Puncak Karang Taruna 2024.</p>
+                <span class="card-link">Visit Banner ↗</span>
+            </a>
+
+            <a href="images/BACKGROUND_20250814_105322_0000.png" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/BACKGROUND_20250814_105322_0000.png" alt="Website Project 02">
+                </div>
+                <div class="card-number">02 / 03</div>
+                <h3 class="card-title">GEMARAYA 2025</h3>
+                <p class="card-description">Malam Puncak Karang Taruna 2025.</p>
+                <span class="card-link">Visit Banner ↗</span>
+            </a>
+
+            <a href="images/TEMPLATE .png" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/TEMPLATE .png" alt="Website Project 03">
+                </div>
+                <div class="card-number">03 / 03</div>
+                <h3 class="card-title">MERDEKA NIGHT FES 2026</h3>
+                <p class="card-description">Malam Puncak Karang Taruna 2026.</p>
+                <span class="card-link">Visit Banner ↗</span>
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- 04. FACTS ABOUT ME -->
+    <!-- <section class="section" id="facts">
+
+        <div class="section-heading">
+            <div>
+                <h2>Facts About Me</h2>
+                <p>Hal sederhana yang menggambarkan diri saya.</p>
+            </div>
+            <span>A Little Personal</span>
+        </div>
+
+        <div class="grid">
+
+            <a href="#facts" class="card">
+                <div class="card-image">
+                    <img src="images/fact1.jpg" alt="Fact 01">
+                </div>
+                <div class="card-number">01 / 03</div>
+                <h3 class="card-title">Always Curious</h3>
+                <p class="card-description">Saya senang mempelajari hal baru dan mencoba sesuatu yang berbeda.</p>
+            </a>
+
+            <a href="#facts" class="card">
+                <div class="card-image">
+                    <img src="images/fact2.jpg" alt="Fact 02">
+                </div>
+                <div class="card-number">02 / 03</div>
+                <h3 class="card-title">Creative Mind</h3>
+                <p class="card-description">Saya menikmati proses mengubah ide menjadi sesuatu yang nyata.</p>
+            </a>
+
+            <a href="#facts" class="card">
+                <div class="card-image">
+                    <img src="images/fact3.jpg" alt="Fact 03">
+                </div>
+                <div class="card-number">03 / 03</div>
+                <h3 class="card-title">Quiet Observer</h3>
+                <p class="card-description">Saya menemukan inspirasi dari hal-hal kecil di sekitar.</p>
+            </a>
+
+        </div>
+    </section> -->
+
+
+    <!-- 05. FAVORITE SONGS -->
+    <!-- <section class="section" id="songs">
+
+        <div class="section-heading">
+            <div>
+                <h2>Favorite Songs</h2>
+                <p>Lagu yang menemani berbagai suasana.</p>
+            </div>
+            <span>Soundtrack of Life</span>
+        </div>
+
+        <div class="grid">
+
+            <a href="https://open.spotify.com" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/song1.jpg" alt="Favorite Song 01">
+                </div>
+                <div class="card-number">01 / 03</div>
+                <h3 class="card-title">Song Title 01</h3>
+                <p class="card-description">Melodi yang selalu terasa berbeda saat didengarkan.</p>
+                <span class="card-link">Listen ↗</span>
+            </a>
+
+            <a href="https://open.spotify.com" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/song2.jpg" alt="Favorite Song 02">
+                </div>
+                <div class="card-number">02 / 03</div>
+                <h3 class="card-title">Song Title 02</h3>
+                <p class="card-description">Lagu yang cocok untuk menikmati waktu sendiri.</p>
+                <span class="card-link">Listen ↗</span>
+            </a>
+
+            <a href="https://open.spotify.com" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/song3.jpg" alt="Favorite Song 03">
+                </div>
+                <div class="card-number">03 / 03</div>
+                <h3 class="card-title">Song Title 03</h3>
+                <p class="card-description">Sebuah lagu dengan suasana yang istimewa.</p>
+                <span class="card-link">Listen ↗</span>
+            </a>
+
+        </div>
+    </section> -->
+
+
+    <!-- 06. FAVORITE BANDS -->
+    <!-- <section class="section" id="bands">
+
+        <div class="section-heading">
+            <div>
+                <h2>Favorite Bands</h2>
+                <p>Musisi yang menjadi bagian dari playlist saya.</p>
+            </div>
+            <span>Artists I Admire</span>
+        </div>
+
+        <div class="grid">
+
+            <a href="https://open.spotify.com" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/band1.jpg" alt="Favorite Band 01">
+                </div>
+                <div class="card-number">01 / 03</div>
+                <h3 class="card-title">Band Name 01</h3>
+                <p class="card-description">Musik dengan karakter dan identitas yang kuat.</p>
+                <span class="card-link">Explore Artist ↗</span>
+            </a>
+
+            <a href="https://open.spotify.com" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/band2.jpg" alt="Favorite Band 02">
+                </div>
+                <div class="card-number">02 / 03</div>
+                <h3 class="card-title">Band Name 02</h3>
+                <p class="card-description">Band yang memberikan inspirasi musikal.</p>
+                <span class="card-link">Explore Artist ↗</span>
+            </a>
+
+            <a href="https://open.spotify.com" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/band3.jpg" alt="Favorite Band 03">
+                </div>
+                <div class="card-number">03 / 03</div>
+                <h3 class="card-title">Band Name 03</h3>
+                <p class="card-description">Karya yang selalu menarik untuk didengarkan kembali.</p>
+                <span class="card-link">Explore Artist ↗</span>
+            </a>
+
+        </div>
+    </section> -->
+
+
+    <!-- 07. FAVORITE SERIES -->
+    <!-- <section class="section" id="series">
+
+        <div class="section-heading">
+            <div>
+                <h2>Favorite Series</h2>
+                <p>Serial dengan cerita dan atmosfer berkesan.</p>
+            </div>
+            <span>Stories on Screen</span>
+        </div>
+
+        <div class="grid">
+
+            <a href="https://www.imdb.com" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/series1.jpg" alt="Series 01">
+                </div>
+                <div class="card-number">01 / 03</div>
+                <h3 class="card-title">Series Title 01</h3>
+                <p class="card-description">Cerita yang meninggalkan kesan setelah ditonton.</p>
+                <span class="card-link">Discover ↗</span>
+            </a>
+
+            <a href="https://www.imdb.com" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/series2.jpg" alt="Series 02">
+                </div>
+                <div class="card-number">02 / 03</div>
+                <h3 class="card-title">Series Title 02</h3>
+                <p class="card-description">Dunia cerita yang menarik untuk dijelajahi.</p>
+                <span class="card-link">Discover ↗</span>
+            </a>
+
+            <a href="https://www.imdb.com" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/series3.jpg" alt="Series 03">
+                </div>
+                <div class="card-number">03 / 03</div>
+                <h3 class="card-title">Series Title 03</h3>
+                <p class="card-description">Serial dengan karakter yang memorable.</p>
+                <span class="card-link">Discover ↗</span>
+            </a>
+
+        </div>
+    </section> -->
+
+
+    <!-- 08. FAVORITE MOVIES -->
+    <!-- <section class="section" id="movies">
+
+        <div class="section-heading">
+            <div>
+                <h2>Favorite Movies</h2>
+                <p>Film yang memberikan perspektif dan pengalaman baru.</p>
+            </div>
+            <span>Cinema Memories</span>
+        </div>
+
+        <div class="grid">
+
+            <a href="https://www.imdb.com" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/movie1.jpg" alt="Movie 01">
+                </div>
+                <div class="card-number">01 / 03</div>
+                <h3 class="card-title">Movie Title 01</h3>
+                <p class="card-description">Film dengan visual dan cerita yang berkesan.</p>
+                <span class="card-link">Discover ↗</span>
+            </a>
+
+            <a href="https://www.imdb.com" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/movie2.jpg" alt="Movie 02">
+                </div>
+                <div class="card-number">02 / 03</div>
+                <h3 class="card-title">Movie Title 02</h3>
+                <p class="card-description">Kisah yang memberikan sudut pandang berbeda.</p>
+                <span class="card-link">Discover ↗</span>
+            </a>
+
+            <a href="https://www.imdb.com" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/movie3.jpg" alt="Movie 03">
+                </div>
+                <div class="card-number">03 / 03</div>
+                <h3 class="card-title">Movie Title 03</h3>
+                <p class="card-description">Film yang layak untuk ditonton kembali.</p>
+                <span class="card-link">Discover ↗</span>
+            </a>
+
+        </div>
+    </section> -->
+
+
+    <!-- 09. FAVORITE SEASONS -->
+    <!-- <section class="section" id="seasons">
+
+        <div class="section-heading">
+            <div>
+                <h2>Favorite Seasons</h2>
+                <p>Suasana musim yang paling saya nikmati.</p>
+            </div>
+            <span>Atmospheric Moments</span>
+        </div>
+
+        <div class="grid">
+
+            <a href="#seasons" class="card">
+                <div class="card-image">
+                    <img src="images/spring.jpg" alt="Spring">
+                </div>
+                <div class="card-number">01 / 03</div>
+                <h3 class="card-title">Spring</h3>
+                <p class="card-description">Awal yang baru dengan suasana segar dan lembut.</p>
+            </a>
+
+            <a href="#seasons" class="card">
+                <div class="card-image">
+                    <img src="images/summer.jpg" alt="Summer">
+                </div>
+                <div class="card-number">02 / 03</div>
+                <h3 class="card-title">Summer</h3>
+                <p class="card-description">Hari panjang dengan cahaya dan energi hangat.</p>
+            </a>
+
+            <a href="#seasons" class="card">
+                <div class="card-image">
+                    <img src="images/autumn.jpg" alt="Autumn">
+                </div>
+                <div class="card-number">03 / 03</div>
+                <h3 class="card-title">Autumn</h3>
+                <p class="card-description">Warna tenang dan suasana yang terasa nostalgik.</p>
+            </a>
+
+        </div>
+    </section> -->
+
+
+    <!-- 10. PLAYLISTS -->
+    <!-- <section class="section" id="playlists">
+
+        <div class="section-heading">
+            <div>
+                <h2>Favorite Playlists</h2>
+                <p>Playlist yang sering menemani aktivitas sehari-hari.</p>
+            </div>
+            <span>Currently On Repeat</span>
+        </div>
+
+        <div class="grid">
+
+            <a href="https://open.spotify.com" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/playlist1.jpg" alt="Playlist 01">
+                </div>
+                <div class="card-number">01 / 03</div>
+                <h3 class="card-title">Playlist 01</h3>
+                <p class="card-description">Musik untuk fokus dan menyelesaikan pekerjaan.</p>
+                <span class="card-link">Play Playlist ↗</span>
+            </a>
+
+            <a href="https://open.spotify.com" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/playlist2.jpg" alt="Playlist 02">
+                </div>
+                <div class="card-number">02 / 03</div>
+                <h3 class="card-title">Playlist 02</h3>
+                <p class="card-description">Kumpulan lagu untuk menikmati suasana malam.</p>
+                <span class="card-link">Play Playlist ↗</span>
+            </a>
+
+            <a href="https://open.spotify.com" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/playlist3.jpg" alt="Playlist 03">
+                </div>
+                <div class="card-number">03 / 03</div>
+                <h3 class="card-title">Playlist 03</h3>
+                <p class="card-description">Musik santai untuk perjalanan dan waktu luang.</p>
+                <span class="card-link">Play Playlist ↗</span>
+            </a>
+
+        </div>
+    </section> -->
+
+
+    <!-- 11. BEST PHOTOS -->
+    <section class="section" id="websites">
+
+        <div class="section-heading">
+            <div>
+                <h2>Best Photos</h2>
+                <p>Foto yang menyimpan kenangan dan cerita.</p>
+            </div>
+            <span>Moments Worth Keeping</span>
+        </div>
+
+        <div class="grid">
+
+            <a href="images/barudak1.jpg" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/barudak1.jpg" alt="Best Photo 01">
+                </div>
+                <div class="card-number">01 / 03</div>
+                <h3 class="card-title">Photo 01</h3>
+                <p class="card-description">Villa w Barudak 2026.</p>
+                <span class="card-link">View Photo ↗</span>
+            </a>
+
+            <a href="images/barudak2.jpg" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/barudak2.jpg" alt="Best Photo 02">
+                </div>
+                <div class="card-number">02 / 03</div>
+                <h3 class="card-title">Photo 02</h3>
+                <p class="card-description">Villa w Barudak 2026.</p>
+                <span class="card-link">View Photo ↗</span>
+            </a>
+
+            <a href="images/barudak3.jpg" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="images/barudak3.jpg" alt="Best Photo 03">
+                </div>
+                <div class="card-number">03 / 03</div>
+                <h3 class="card-title">Photo 03</h3>
+                <p class="card-description">Villa w Barudak 2026.</p>
+                <span class="card-link">View Photo ↗</span>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- SHOWCASE CONTENT -->
+    <main id="showcase"></main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="about">
+
+        <div>
+            © 2026 PERSONAL ARCHIVE
+        </div>
+
+        <div>
+            Designed by Vermilion.
+        </div>
+        
+    </footer>
+
+</div>
+
+        
+    </section>
+</main>
+
+
+
+  <!-- end contact section -->
+
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h5>
+              About
+            </h5>
+            <div>
+              <div class="img-box">
+                <img src="images/location-white.png" width="18px" alt="">
+              </div>
+              <p>
+                Bandung
+              </p>
+            </div>
+            <div>
+              <div class="img-box">
+                <img src="images/telephone-white.png" width="12px" alt="">
+              </div>
+              <p>
+                +62 819 1673 1116
+              </p>
+            </div>
+            <div>
+              <div class="img-box">
+                <img src="images/envelope-white.png" width="18px" alt="">
+              </div>
+              <p>
+                vermiliondevice@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_info">
+            <h5>
+              Informations
+            </h5>
+            <p>
+              Contact me for Comission or other design, photography, and Web
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="info_insta">
+            <h5>
+              Team
+            </h5>
+            <div class="insta_container">
+              <div>
+                <a href="">
+                  <div class="insta-box b-1">
+                    <img src="images/icontol.png" style="width: 20px;">
+                  </div>
+                </a>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_form ">
+            <h5>
+              Newsletter
+            </h5>
+            <!-- <form action="">
+              <input type="email" placeholder="Enter your email">
+              <button>
+                Subscribe
+              </button>
+            </form> -->
+            <div class="social_box">
+              <a href="">
+                <img src="images/fb.png" alt="">
+              </a>
+              <a href="https://x.com/vermilionsama?t=Tz5TlzzPGZ6jAz2hEhTAEQ&s=08">
+                <img src="images/twitter.png" alt="">
+              </a>
+              <a href="https://www.linkedin.com/in/muhamad-raffly-herdiansyah-a606a7362?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                <img src="images/linkedin.png" alt="">
+              </a>
+              <a href="">
+                <img src="images/youtube.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      &copy; 2025 All Rights Reserved By
+      <a href="https://www.instagram.com/vermiliondsgn.ai/">Vermilion</a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- owl carousel script 
+    -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 0,
+      navText: [],
+      center: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  </script>
+  <!-- end owl carousel script -->
+
+</body>
+
+</html>
